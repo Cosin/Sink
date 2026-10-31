@@ -1,12 +1,12 @@
 export default defineAppConfig({
-  title: 'Sink',
-  documentation: 'https://docs.sink.cool',
-  github: 'https://github.com/miantiao-me/sink',
-  coffee: 'https://sink.cool/coffee',
-  twitter: 'https://sink.cool/x',
-  telegram: 'https://sink.cool/telegram',
-  description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.',
-  image: 'https://sink.cool/banner.png',
+  title: '花墨世界',
+  tagline: '花墨世界 · 短链接',
+  description: '花墨世界的个人短链接：博客与 YouTube 频道入口。',
+  blog: 'https://sssis.me',
+  youtube: 'https://www.youtube.com/@ihuamo',
+  github: 'https://github.com/Cosin/Sink',
+  upstream: 'https://github.com/miantiao-me/sink',
+  image: '/og.png',
   previewTTL: 300, // 5 minutes
   slugRegex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/i,
   reserveSlug: [

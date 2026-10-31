@@ -5,18 +5,20 @@ const { title, description, image } = useAppConfig()
 const route = useRoute()
 const localeHead = useLocaleHead()
 const colorMode = useColorMode()
+const { origin } = useRequestURL()
+const imageUrl = image.startsWith('/') ? `${origin}${image}` : image
 
 useSeoMeta({
-  title: `${title} - Link Shortener with Analytics`,
+  title,
   description,
   ogType: 'website',
   ogTitle: title,
   ogSiteName: title,
   ogDescription: description,
-  ogImage: image,
+  ogImage: imageUrl,
   twitterTitle: title,
   twitterDescription: description,
-  twitterImage: image,
+  twitterImage: imageUrl,
   twitterCard: 'summary_large_image',
 })
 
@@ -35,11 +37,17 @@ useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: computed(() => `https://sink.cool${route.path}`),
+      href: computed(() => `${origin}${route.path}`),
+    },
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/favicon.svg',
     },
     {
       rel: 'icon',
       type: 'image/png',
+      sizes: '192x192',
       href: '/icon-192.png',
     },
     {

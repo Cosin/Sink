@@ -1,3 +1,8 @@
+> [!NOTE]
+> This is a modified fork of [Sink](https://github.com/miantiao-me/sink) by [miantiao-me](https://github.com/miantiao-me), deployed as the personal short-link site of 花墨世界 at [csz.me](https://csz.me).
+> Changes (2026-10-31): replaced the public homepage with a personal landing page (blog / YouTube links), replaced Sink branding and icons with a "花" monogram, removed upstream promotional links (X / Telegram / sponsor / docs), testimonials, GitHub stats and the upstream version check; added an AGPL-3.0 "Powered by Sink · Source" notice in the footer and a source link in the dashboard.
+> Licensed under [AGPL-3.0-only](LICENSE); the complete corresponding source of this deployment is this repository.
+
 # ⚡ Sink
 
 **A Simple, Speedy, Secure, and Serverless Link Shortener with Analytics, Running Entirely on Cloudflare.**

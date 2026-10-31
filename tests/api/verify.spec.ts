@@ -11,7 +11,7 @@ describe('/api/verify', () => {
     const data = await response.json() as VerifyResponse
     expect(data).toMatchObject({
       name: 'Sink',
-      url: 'https://sink.cool',
+      url: expect.stringMatching(/^https?:\/\//),
       authMethod: 'site-token',
       userID: 'root',
       userEmail: 'root@localhost',

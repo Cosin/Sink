@@ -1,20 +1,17 @@
 <script setup lang="ts">
-import { ArrowUpCircle, Coffee, Languages, Laptop, Moon, Sun } from '@lucide/vue'
+import { Languages, Laptop, Moon, Sun } from '@lucide/vue'
+import { GitHubIcon } from 'vue3-simple-icons'
 import { useSidebar } from '@/components/ui/sidebar'
 
-const { coffee } = useAppConfig()
+const { github } = useAppConfig()
+const sourceLabel = 'Source · AGPL-3.0'
 const colorMode = useColorMode()
-const { t, setLocale, locales } = useI18n()
+const { setLocale, locales } = useI18n()
 const { isMobile, state } = useSidebar()
-const { hasUpdate, currentVersion, latestVersion } = useVersionCheck()
 
 const secondaryMenuClass = computed(() => isMobile.value || state.value === 'expanded'
   ? 'flex-row items-center'
   : 'items-center')
-const releaseLabel = computed(() => t('sidebar.update', {
-  current: currentVersion,
-  version: latestVersion.value,
-}))
 </script>
 
 <template>
@@ -24,40 +21,16 @@ const releaseLabel = computed(() => t('sidebar.update', {
         <SidebarMenuItem>
           <SidebarMenuButton
             as-child
-            :tooltip="$t('sidebar.coffee')"
+            :tooltip="sourceLabel"
             class="w-9 justify-center px-0"
           >
             <a
-              :href="coffee"
+              :href="github"
               target="_blank"
               rel="noopener noreferrer"
-              :aria-label="$t('sidebar.coffee')"
+              :aria-label="sourceLabel"
             >
-              <Coffee aria-hidden="true" />
-            </a>
-          </SidebarMenuButton>
-        </SidebarMenuItem>
-
-        <SidebarMenuItem v-if="hasUpdate">
-          <SidebarMenuButton
-            as-child
-            :tooltip="releaseLabel"
-            class="relative w-9 justify-center px-0"
-          >
-            <a
-              href="https://github.com/ccbikai/Sink/releases"
-              target="_blank"
-              rel="noopener noreferrer"
-              :aria-label="releaseLabel"
-            >
-              <ArrowUpCircle aria-hidden="true" />
-              <span
-                aria-hidden="true"
-                class="
-                  absolute top-0.5 right-0.5 size-1.5 rounded-full bg-success
-                  motion-safe:animate-pulse
-                "
-              />
+              <GitHubIcon aria-hidden="true" />
             </a>
           </SidebarMenuButton>
         </SidebarMenuItem>
