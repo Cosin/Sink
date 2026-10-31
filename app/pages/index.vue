@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ArrowUpRight, BookOpen } from '@lucide/vue'
-import { YouTubeIcon } from 'vue3-simple-icons'
+import { BilibiliIcon, YouTubeIcon } from 'vue3-simple-icons'
 
 definePageMeta({ layout: false })
 
-const { title, tagline, blog, youtube } = useAppConfig()
+const { title, tagline, blog, youtube, bilibili } = useAppConfig()
 
 function hostOf(url: string) {
   try {
@@ -29,6 +29,13 @@ const links = computed(() => [
     label: 'YouTube 频道',
     detail: title,
     icon: YouTubeIcon,
+  },
+  bilibili && {
+    key: 'bilibili',
+    href: bilibili,
+    label: 'B站频道',
+    detail: title,
+    icon: BilibiliIcon,
   },
 ].filter(Boolean) as { key: string, href: string, label: string, detail: string, icon: Component }[])
 </script>
