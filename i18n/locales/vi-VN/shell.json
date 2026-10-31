@@ -1,23 +1,11 @@
 {
   "layouts": {
-    "footer": {
-      "social": {
-        "email": "Email",
-        "blog": "Blog",
-        "mastodon": "Mastodon",
-        "github": "GitHub"
-      }
-    },
     "header": {
-      "select_language": "Chọn ngôn ngữ",
-      "toggle_menu_aria_label": "Mở hoặc đóng menu"
+      "select_language": "Chọn ngôn ngữ"
     },
     "links": {
-      "api_reference": "Tham chiếu API",
-      "resources_aria_label": "Tài nguyên",
       "skip_to_content": "Chuyển đến nội dung chính",
-      "home_aria_label": "Trang chủ",
-      "github_aria_label": "Sink trên GitHub"
+      "home_aria_label": "Trang chủ"
     }
   },
   "nav": {

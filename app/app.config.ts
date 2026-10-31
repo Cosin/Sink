@@ -1,10 +1,12 @@
 export default defineAppConfig({
-  title: 'Sink',
+  title: '花墨世界',
+  tagline: '花墨世界 · 短链接',
+  description: '花墨世界的个人短链接：博客与 YouTube 频道入口。',
+  blog: 'https://sssis.me',
+  youtube: 'https://www.youtube.com/@ihuamo',
   github: 'https://github.com/Cosin/Sink',
   upstream: 'https://github.com/miantiao-me/sink',
-  license: 'https://github.com/Cosin/Sink/blob/master/LICENSE',
-  description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.',
-  image: '/banner.png',
+  image: '/og.png',
   previewTTL: 300, // 5 minutes
   slugRegex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/i,
   reserveSlug: [

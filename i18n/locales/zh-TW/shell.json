@@ -1,23 +1,11 @@
 {
   "layouts": {
-    "footer": {
-      "social": {
-        "email": "信箱",
-        "blog": "部落格",
-        "mastodon": "Mastodon",
-        "github": "GitHub"
-      }
-    },
     "header": {
-      "select_language": "選擇語言",
-      "toggle_menu_aria_label": "切換選單"
+      "select_language": "選擇語言"
     },
     "links": {
-      "api_reference": "API 參考",
-      "resources_aria_label": "資源",
       "skip_to_content": "跳到主要內容",
-      "home_aria_label": "首頁",
-      "github_aria_label": "GitHub 上的 Sink"
+      "home_aria_label": "首頁"
     }
   },
   "nav": {

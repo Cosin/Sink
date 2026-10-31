@@ -9,7 +9,7 @@ const { origin } = useRequestURL()
 const imageUrl = image.startsWith('/') ? `${origin}${image}` : image
 
 useSeoMeta({
-  title: `${title} - Link Shortener with Analytics`,
+  title,
   description,
   ogType: 'website',
   ogTitle: title,
@@ -41,7 +41,13 @@ useHead(() => ({
     },
     {
       rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/favicon.svg',
+    },
+    {
+      rel: 'icon',
       type: 'image/png',
+      sizes: '192x192',
       href: '/icon-192.png',
     },
     {

@@ -1,23 +1,11 @@
 {
   "layouts": {
-    "footer": {
-      "social": {
-        "email": "Email",
-        "blog": "Blog",
-        "mastodon": "Mastodon",
-        "github": "GitHub"
-      }
-    },
     "header": {
-      "select_language": "Seleziona Lingua",
-      "toggle_menu_aria_label": "Apri o chiudi il menu"
+      "select_language": "Seleziona Lingua"
     },
     "links": {
-      "api_reference": "Riferimento API",
-      "resources_aria_label": "Risorse",
       "skip_to_content": "Vai al contenuto principale",
-      "home_aria_label": "Pagina iniziale",
-      "github_aria_label": "Sink su GitHub"
+      "home_aria_label": "Pagina iniziale"
     }
   },
   "nav": {
