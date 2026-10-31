@@ -55,26 +55,8 @@
         "description": "Supporto i18n completo per dashboard e pagine di reindirizzamento"
       }
     },
-    "cta": {
-      "title": "Distribuisci Sink",
-      "description": "Segui la guida introduttiva per configurare e distribuire Sink su Cloudflare",
-      "button": "Vedi la guida al deploy"
-    },
     "logos": {
       "title": "Costruito con tecnologie eccezionali"
-    },
-    "twitter": {
-      "follow": "Segui su X(Twitter)"
-    },
-    "stats": {
-      "title": "Sink in Numeri",
-      "subtitle": "Affidabile per sviluppatori in tutto il mondo",
-      "stars": "Stelle su GitHub",
-      "forks": "Fork"
-    },
-    "testimonials": {
-      "title": "Amato dagli Utenti",
-      "subtitle": "Scopri cosa dicono gli sviluppatori su Sink"
     }
   }
 }

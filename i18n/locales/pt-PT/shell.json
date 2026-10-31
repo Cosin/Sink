@@ -3,9 +3,7 @@
     "footer": {
       "social": {
         "email": "Email",
-        "telegram": "Telegram",
         "blog": "Blog",
-        "twitter": "Twitter",
         "mastodon": "Mastodon",
         "github": "GitHub"
       }
@@ -15,9 +13,7 @@
       "toggle_menu_aria_label": "Abrir ou fechar o menu"
     },
     "links": {
-      "documentation": "Documentação",
       "api_reference": "Referência da API",
-      "documentation_aria_label": "Abrir a documentação do Sink (abre num novo separador)",
       "resources_aria_label": "Recursos",
       "skip_to_content": "Ir para o conteúdo principal",
       "home_aria_label": "Início",
@@ -37,10 +33,7 @@
     "settings": "Definições",
     "import": "Importar",
     "export": "Exportar",
-    "coffee": "Paga-me um café",
     "github": "GitHub",
-    "releases": "Versões",
-    "stars": "Estrelas",
-    "update": "Nova versão {version} disponível (atual: {current})"
+    "releases": "Versões"
   }
 }

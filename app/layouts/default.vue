@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ExternalLink, Menu, Star } from '@lucide/vue'
-import NumberFlow from '@number-flow/vue'
-import { GitHubIcon, TelegramIcon, XIcon } from 'vue3-simple-icons'
+import { Menu } from '@lucide/vue'
+import { GitHubIcon } from 'vue3-simple-icons'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -18,8 +17,7 @@ import {
 } from '@/components/ui/sheet'
 
 const mobileMenuOpen = shallowRef(false)
-const { title, documentation, telegram, twitter, github } = useAppConfig()
-const { rawStats } = useGithubStats()
+const { title, github, upstream, license } = useAppConfig()
 
 function closeMobileMenu() {
   mobileMenuOpen.value = false
@@ -84,19 +82,6 @@ function closeMobileMenu() {
                   <NavigationMenuItem>
                     <NavigationMenuLink as-child>
                       <a
-                        :href="documentation"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        :aria-label="$t('layouts.links.documentation_aria_label')"
-                      >
-                        {{ $t('layouts.links.documentation') }}
-                        <ExternalLink class="size-3.5" aria-hidden="true" />
-                      </a>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                  <NavigationMenuItem>
-                    <NavigationMenuLink as-child>
-                      <a
                         href="/_docs/scalar"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -118,8 +103,7 @@ function closeMobileMenu() {
                   class="flex items-center gap-1.5"
                 >
                   <GitHubIcon class="size-4" aria-hidden="true" />
-                  <Star class="size-3" aria-hidden="true" />
-                  <NumberFlow class="tabular-nums" :value="rawStats.stars" />
+                  <span>Source</span>
                 </a>
               </Button>
               <SwitchLanguage />
@@ -171,22 +155,6 @@ function closeMobileMenu() {
                 >
                   <nav class="flex flex-col gap-1">
                     <a
-                      :href="documentation"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      :aria-label="$t('layouts.links.documentation_aria_label')"
-                      class="
-                        flex min-h-11 items-center justify-between gap-2
-                        rounded-xl px-3 text-sm font-medium
-                        text-muted-foreground transition-colors
-                        hover:bg-muted hover:text-foreground
-                      "
-                      @click="closeMobileMenu"
-                    >
-                      {{ $t('layouts.links.documentation') }}
-                      <ExternalLink class="size-3.5" aria-hidden="true" />
-                    </a>
-                    <a
                       href="/_docs/scalar"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -212,8 +180,7 @@ function closeMobileMenu() {
                         class="flex items-center gap-1.5"
                       >
                         <GitHubIcon class="size-4" aria-hidden="true" />
-                        <Star class="size-3" aria-hidden="true" />
-                        <NumberFlow class="tabular-nums" :value="rawStats.stars" />
+                        <span>Source</span>
                       </a>
                     </Button>
                     <div class="flex items-center justify-center gap-3">
@@ -278,38 +245,6 @@ function closeMobileMenu() {
             class="flex flex-wrap justify-center gap-2 text-sm"
           >
             <Button
-              v-if="twitter"
-              as-child
-              variant="ghost"
-              size="icon"
-            >
-              <a
-                :href="twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-                :title="$t('layouts.footer.social.twitter')"
-                :aria-label="$t('layouts.footer.social.twitter')"
-              >
-                <XIcon aria-hidden="true" />
-              </a>
-            </Button>
-            <Button
-              v-if="telegram"
-              as-child
-              variant="ghost"
-              size="icon"
-            >
-              <a
-                :href="telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-                :title="$t('layouts.footer.social.telegram')"
-                :aria-label="$t('layouts.footer.social.telegram')"
-              >
-                <TelegramIcon aria-hidden="true" />
-              </a>
-            </Button>
-            <Button
               v-if="github"
               as-child
               variant="ghost"
@@ -327,6 +262,38 @@ function closeMobileMenu() {
             </Button>
           </nav>
         </div>
+        <p class="mt-6 text-center text-xs text-muted-foreground">
+          Based on
+          <a
+            :href="upstream"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="
+              underline underline-offset-4
+              hover:text-foreground
+            "
+          >Sink</a>
+          by miantiao-me ·
+          <a
+            :href="license"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="
+              underline underline-offset-4
+              hover:text-foreground
+            "
+          >AGPL-3.0</a>
+          ·
+          <a
+            :href="github"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="
+              underline underline-offset-4
+              hover:text-foreground
+            "
+          >Source</a>
+        </p>
       </div>
     </footer>
   </div>

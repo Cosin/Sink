@@ -3,9 +3,7 @@
     "footer": {
       "social": {
         "email": "Email",
-        "telegram": "Telegram",
         "blog": "Blog",
-        "twitter": "Twitter",
         "mastodon": "Mastodon",
         "github": "GitHub"
       }
@@ -15,9 +13,7 @@
       "toggle_menu_aria_label": "Apri o chiudi il menu"
     },
     "links": {
-      "documentation": "Documentazione",
       "api_reference": "Riferimento API",
-      "documentation_aria_label": "Apri la documentazione di Sink (si apre in una nuova scheda)",
       "resources_aria_label": "Risorse",
       "skip_to_content": "Vai al contenuto principale",
       "home_aria_label": "Pagina iniziale",
@@ -37,10 +33,7 @@
     "settings": "Impostazioni",
     "import": "Importa",
     "export": "Esporta",
-    "coffee": "Offrimi un caffè",
     "github": "GitHub",
-    "releases": "Versioni",
-    "stars": "Stelle",
-    "update": "Nuova versione {version} disponibile (attuale: {current})"
+    "releases": "Versioni"
   }
 }

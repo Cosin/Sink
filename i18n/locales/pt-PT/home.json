@@ -55,26 +55,8 @@
         "description": "Suporte i18n completo para painel e páginas de redirecionamento"
       }
     },
-    "cta": {
-      "title": "Implementar o Sink",
-      "description": "Consulta o guia de introdução para configurar e implementar o Sink na Cloudflare",
-      "button": "Ver guia de implementação"
-    },
     "logos": {
       "title": "Construído com tecnologias incríveis"
-    },
-    "twitter": {
-      "follow": "Segue no X (Twitter)"
-    },
-    "stats": {
-      "title": "Mergulha nos números",
-      "subtitle": "Confiado por programadores no mundo inteiro",
-      "stars": "Estrelas no GitHub",
-      "forks": "Forks"
-    },
-    "testimonials": {
-      "title": "Adorado pelos clientes",
-      "subtitle": "Vê o que os programadores dizem sobre o Sink"
     }
   }
 }

@@ -55,26 +55,8 @@
         "description": "Dukungan penuh i18n untuk dashboard dan halaman pengalihan"
       }
     },
-    "cta": {
-      "title": "Deploy Sink",
-      "description": "Ikuti panduan memulai untuk mengonfigurasi dan men-deploy Sink di Cloudflare",
-      "button": "Baca Panduan Deploy"
-    },
     "logos": {
       "title": "Dibangun dengan teknologi terbaik"
-    },
-    "twitter": {
-      "follow": "Ikuti di X (Twitter)"
-    },
-    "stats": {
-      "title": "Sink dalam Angka",
-      "subtitle": "Dipercaya oleh developer di seluruh dunia",
-      "stars": "Bintang di GitHub",
-      "forks": "Fork"
-    },
-    "testimonials": {
-      "title": "Disukai Pengguna",
-      "subtitle": "Lihat apa kata developer tentang Sink"
     }
   }
 }

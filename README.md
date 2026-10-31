@@ -1,3 +1,8 @@
+> [!NOTE]
+> This is a modified fork of [Sink](https://github.com/miantiao-me/sink) by [miantiao-me](https://github.com/miantiao-me), deployed at [csz.me](https://csz.me).
+> Changes (2026-10-31): removed upstream promotional links (X / Telegram / sponsor / docs), testimonials, GitHub stats and upstream version check from the UI; added an AGPL-3.0 source notice in the footer and dashboard.
+> Licensed under [AGPL-3.0-only](LICENSE); the complete corresponding source of this deployment is this repository.
+
 # ⚡ Sink
 
 **A Simple, Speedy, Secure, and Serverless Link Shortener with Analytics, Running Entirely on Cloudflare.**

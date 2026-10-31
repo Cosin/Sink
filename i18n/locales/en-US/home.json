@@ -55,26 +55,8 @@
         "description": "Full i18n support for dashboard and redirect pages"
       }
     },
-    "cta": {
-      "title": "Deploy Sink",
-      "description": "Follow the getting started guide to configure and deploy Sink on Cloudflare",
-      "button": "Read Deployment Guide"
-    },
     "logos": {
       "title": "Built with awesome technologies"
-    },
-    "twitter": {
-      "follow": "Follow on X(Twitter)"
-    },
-    "stats": {
-      "title": "Sink in Numbers",
-      "subtitle": "Trusted by developers around the world",
-      "stars": "Stars on GitHub",
-      "forks": "Forks"
-    },
-    "testimonials": {
-      "title": "Loved by Users",
-      "subtitle": "See what developers are saying about Sink"
     }
   }
 }

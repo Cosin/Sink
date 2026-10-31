@@ -3,9 +3,7 @@
     "footer": {
       "social": {
         "email": "邮箱",
-        "telegram": "Telegram",
         "blog": "博客",
-        "twitter": "Twitter",
         "mastodon": "Mastodon",
         "github": "GitHub"
       }
@@ -15,9 +13,7 @@
       "toggle_menu_aria_label": "切换菜单"
     },
     "links": {
-      "documentation": "文档",
       "api_reference": "API 参考",
-      "documentation_aria_label": "打开 Sink 文档（在新标签页中打开）",
       "resources_aria_label": "资源",
       "skip_to_content": "跳到主要内容",
       "home_aria_label": "首页",
@@ -37,10 +33,7 @@
     "settings": "设置",
     "import": "导入",
     "export": "导出",
-    "coffee": "请我喝杯咖啡",
     "github": "GitHub",
-    "releases": "版本发布",
-    "stars": "Stars",
-    "update": "新版本 {version} 可用（当前: {current}）"
+    "releases": "版本发布"
   }
 }

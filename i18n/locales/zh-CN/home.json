@@ -55,26 +55,8 @@
         "description": "仪表盘和跳转页面完整的国际化支持"
       }
     },
-    "cta": {
-      "title": "部署 Sink",
-      "description": "阅读入门指南，在 Cloudflare 上配置并部署 Sink",
-      "button": "查看部署指南"
-    },
     "logos": {
       "title": "使用优秀的技术构建"
-    },
-    "twitter": {
-      "follow": "在 X(Twitter) 上关注我"
-    },
-    "stats": {
-      "title": "Sink 数据",
-      "subtitle": "受到全球开发者的信赖",
-      "stars": "GitHub Stars",
-      "forks": "Forks"
-    },
-    "testimonials": {
-      "title": "用户好评",
-      "subtitle": "看看开发者们怎么说"
     }
   }
 }

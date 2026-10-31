@@ -3,9 +3,7 @@
     "footer": {
       "social": {
         "email": "Email",
-        "telegram": "Telegram",
         "blog": "Blog",
-        "twitter": "Twitter",
         "mastodon": "Mastodon",
         "github": "GitHub"
       }
@@ -15,9 +13,7 @@
       "toggle_menu_aria_label": "Buka atau tutup menu"
     },
     "links": {
-      "documentation": "Dokumentasi",
       "api_reference": "Referensi API",
-      "documentation_aria_label": "Buka dokumentasi Sink (terbuka di tab baru)",
       "resources_aria_label": "Sumber daya",
       "skip_to_content": "Lompat ke konten utama",
       "home_aria_label": "Beranda",
@@ -37,10 +33,7 @@
     "settings": "Pengaturan",
     "import": "Impor",
     "export": "Ekspor",
-    "coffee": "Traktir Kopi",
     "github": "GitHub",
-    "releases": "Rilis",
-    "stars": "Bintang",
-    "update": "Versi baru {version} tersedia (saat ini: {current})"
+    "releases": "Rilis"
   }
 }

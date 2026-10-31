@@ -55,26 +55,8 @@
         "description": "Vollständige i18n-Unterstützung für Dashboard und Weiterleitungsseiten"
       }
     },
-    "cta": {
-      "title": "Sink bereitstellen",
-      "description": "Folge der Anleitung für die ersten Schritte, um Sink auf Cloudflare einzurichten und bereitzustellen",
-      "button": "Deployment-Anleitung öffnen"
-    },
     "logos": {
       "title": "Entwickelt mit großartigen Technologien"
-    },
-    "twitter": {
-      "follow": "Folge mir auf X (Twitter)"
-    },
-    "stats": {
-      "title": "Sink in Zahlen",
-      "subtitle": "Von Entwicklern weltweit vertraut",
-      "stars": "Stars auf GitHub",
-      "forks": "Forks"
-    },
-    "testimonials": {
-      "title": "Von Nutzern geliebt",
-      "subtitle": "Erfahre, was Entwickler über Sink sagen"
     }
   }
 }
